@@ -6,17 +6,56 @@
 // If the potential member is not in the array, return the array unchanged.
 // If the potential member is in the array, remove all instances of it from the array.
 
+function remove(people, member) {
+    let newArray = [];
+    for (let name of people) {
+        if (name !== member) {
+            newArray.push(name);
+        }
+    }
+        return newArray;
+    }
+
+
+
 // 2. Revisit your "remove" function. Make sure that it does not change the original
 // array but instead returns a new array.
 
 // 3. Create a function called "sum" that takes an array of numbers and
 // returns the sum of those numbers.
 
+function sum(number)  {
+    let total = 0;
+    for (let order of number) {
+        total += order;
+    }
+    return total;
+
+}
+
 // 4. Create a function called "average" that takes an array of numbers
 // and returns the average of those numbers.
 
+function average(number) {
+    let ave = sum(number);
+    if(ave === 0)
+    return;
+    return (ave / number.length);
+}
+
 // 5. Create a function called "minimum" that takes an array of numbers and
 // returns the smallest number in that array.
+function minimum(number) {
+    if(number.length === 0)
+    return;
+    if (number.length === 1)
+    return number[0];
+    let min = number[0];
+    for (let total of number)
+    if (min < total)
+    total = math.min;
+    return total;
+}
 
 // 6. There are many techniques to sort arrays in programming. Your programming
 // language will likely include the ability to do this. We are going to
@@ -42,8 +81,16 @@
 // https://courses.cs.vt.edu/csonline/Algorithms/Lessons/SelectionSort/index.html
 // to see how. This may make more sense to you.
 
+
+
+
+
 // 7. Create a function called `textList` that takes an array and joins its elements
 // into a string separated by commas.
 //
 // For example, `textList(['Cadence', 'Ordel', 'Marion'])` results in the string
 // `"Cadence,Ordel,Marion"`.
+
+// function textList {
+//     let text =textListtostring
+// }
